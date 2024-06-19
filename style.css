@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Google sans Regular";
+}
+
+
+
+body{
+    background: #fff;
+}
+
+
+.logo{
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.hamburger{
+    display: none;
+}
+
+header{
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+    padding: 0 100px;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li{
+    list-style: none;
+}
+
+.nav-bar ul li a:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-bar ul li a.active{
+    color: black;
+    background: white;
+}
+
+
+@media only screen and (max-width: 1320px){
+
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+
+   .hamburger{
+
+    display: block;
+    cursor: pointer;
+   }
+   .hamburger .line{
+
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+   }
+
+   .nav-bar.active{
+    height: 450px;
+   }
+
+   .nav-bar{
+    height: 0px;
+    position: absolute;
+    width: 100vw;
+    background: #000;
+    transition: 0.2s;
+    top: 80px;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+   }
+
+   .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+   }
+
+   .nav-bar ul li a{
+    margin-bottom: 12px;
+   }
+}
+
+
+/* @media only screen and (max-width: 1320px)
+{
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px)
+{
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+} */
+
+
+/* .logo{
+    font-weight: bold;
+    font-size: 28px;
+    color: #fefefe;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+
+    background: #11101b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+} */
